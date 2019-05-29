@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>FastCalc</title>
+        <title>Parcial 1</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|
         Open+Sans:400,600|PT+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
+        <script src="backEnd.js"></script>
     </head>
     <body>
 
@@ -26,16 +27,43 @@
                     </nav>
                 </div> <!--Barra-->
                 <div class="textoHeader">
-                    <h1 class="noMargin">Mostramos lo trabajado durante el semestre</h1>
-                    <p class="noMargin">Temas vistos durante las tres parciales</p>
+                    <h1 class="noMargin title">Metodo por determinantes</h1>
                 </div>
             </div><!--Contenedor-->
         </header>
+        <form name="primerParcial">
+            <table class="textoHeader" >
+                <tbody> 
+                    <tr>
+                        <input type="number" id="x1"><text>+</text>
+                        <input type="number" id="y1"><text>+</text>
+                        <input type="number" id="z1"><text>=</text>
+                        <input type="number" id="r1">
+                        <br></br>
+                        <input type="number" id="x2"><text>+</text>
+                        <input type="number" id="y2"><text>+</text>
+                        <input type="number" id="z2"><text>=</text>
+                        <input type="number" id="r2">
+                        <br></br>
+                        <input type="number" id="x3"><text>+</text>
+                        <input type="number" id="y3"><text>+</text>
+                        <input type="number" id="z3"><text>=</text>
+                        <input type="number" id="r3">
+                        <br></br>
+                        <input type="button" value="DETERMINANTE" onclick="alert(determinanteFunc(10, 10, 10, 10, 10, 10, 10, 10, 10));">
+                        <input type="button" value="VALOR X" onclick="alert(resultadoX(10, 10, 10, 10, 10, 10, 10, 10, 10));">
+                        <input type="button" value="VALOR Y" onclick="alert(resultadoY(10, 10, 10, 10, 10, 10, 10, 10, 10));">
+                        <input type="button" value="VALOR Z" onclick="alert(resultadoZ(10, 10, 10, 10, 10, 10, 10, 10, 10));">
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </form>
 
         <footer class="siteFooter">
                 <div class="contenedor">
                     <div class="barra">
-                        <h4 class="noMargin">MAYO DEL 2019 COLIMA, COL</h4>
+                        <h4 class="noMargin">MAYO DEL 2019 COLIMA, COL <br></br>  Facultad de Telemática UDC</h4>
                     </div>
                 </div>
         </footer>
